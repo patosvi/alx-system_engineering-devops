@@ -1,2 +1,6 @@
 #!/bin/bash
 echo $(('echo $PATH | grep -o ":/"|wc -l'+ 1))
+<<<<<<< HEAD
+=======
+
+>>>>>>> cc441c2fabd358fda6788f84905db277b13d10f5
