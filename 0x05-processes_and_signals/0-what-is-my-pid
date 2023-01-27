@@ -1,0 +1,4 @@
+
+#!/usr/bin/env bash
+#this finds the pid of the runnin process
+echo $$
