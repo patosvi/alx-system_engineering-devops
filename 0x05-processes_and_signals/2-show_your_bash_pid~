@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#the command allowws dsplay of pid of named proces
+## shellcheck disable=SC2009
+ps -aux | grep bash
