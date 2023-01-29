@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#the command will kill the running processes
+# pgrep -4 specififies the file
+#xargs takes arguments from standout
+pgrep -f 4-to_infinity_and_beyond | xargs kill -15

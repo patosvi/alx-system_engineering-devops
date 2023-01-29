@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#the command will kill the running processes
+ kill -1
