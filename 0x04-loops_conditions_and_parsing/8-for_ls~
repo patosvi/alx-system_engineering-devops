@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#creating a bash script that list files and adds comments
+for i in *
+do
+	echo "$i | cut -f 2- -d '-'
+done
