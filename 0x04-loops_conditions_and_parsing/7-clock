@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#bash script that shows time with a nested loop
+hour=0
+while [ $hour -le 12 ]
+do
+	echo "Hour: $hour"
+	minutes=1
+	while [ $minutes -lt 61 ]
+	do
+		echo "$minutes"
+		((minutes++))
+	done
+	((hour++))
+done
