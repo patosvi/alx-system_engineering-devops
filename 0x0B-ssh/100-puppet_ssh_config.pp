@@ -1,8 +1,6 @@
-# set up your client SSH configuration file so that you can
-# connect to a server without typing a password
-
+# Changes SSH config file
 exec { 'echo':
   path    => 'usr/bin:/bin',
-  command => 'echo "    IdentityFile ~/.ssh/school\n    PasswordAuthentication no" >> /etc/ssh/ssh_config',
+  command => 'echo "    IdentityFile ~/.ssh/holberton\n    PasswordAuthentication no" >> /etc/ssh/ssh_config',
   returns => [0,1],
 }
