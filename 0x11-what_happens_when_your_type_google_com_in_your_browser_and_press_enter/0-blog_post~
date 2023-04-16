@@ -1,0 +1,85 @@
+This article explains The question what happens when you type https://www.google.com "
+we begin by explaining the beloy trems and we will conlude by contextualising these sytstems.
+Any web browsing uses the below
+
+*DNS request
+*TCP/IP
+*Firewall
+*HTTPS/SSL
+*Load-balancer
+*Web server
+*Application server
+*Database
+                                ****DNS request***
+A DNS request is a network request sent by a client to a DNS (Domain Name System) server to resolve a domain name to an IP address. DNS is a hierarchical naming system that translates human-readable domain names, such as www.google.com, into IP addresses that computers can understand and use to communicate with each other over the internet.
+When a user types a domain name into a web browser or other network client, the client sends a DNS request to a DNS server to obtain the IP address associated with that domain name. The DNS server looks up the IP address in its database and returns it to the client, allowing the client to establish a connection with the requested server.
+                                   ***TCP/IP***
+TCP/IP (Transmission Control Protocol/Internet Protocol) is a suite of communication protocols used to connect devices over the internet and other networks. It is the primary protocol used for communication on the internet.
+
+TCP is a connection-oriented protocol that provides reliable, ordered, and error-checked delivery of data between applications running on networked devices. It ensures that packets of data sent over a network arrive at their destination intact and in the correct order. TCP breaks down large data streams into smaller segments, which are then transmitted and reassembled at the receiving end.
+
+IP is a connectionless protocol that provides the addressing and routing mechanisms for data transmission between devices on a network. It defines how data packets are addressed and routed between devices, and ensures that they are delivered to the correct destination.
+
+Together, these protocols provide a standardized framework for communication between devices on a network, allowing data to be transmitted and received reliably and efficiently.
+
+                                 ***Firewall***
+A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on a set of predefined security rules. The main function of a firewall is to protect a network from unauthorized access, while allowing legitimate traffic to pass through.Firewalls work by inspecting network traffic and applying security rules to allow or block traffic based on various criteria, such as the source and destination IP addresses, ports, and protocols. Firewalls can also use advanced security technologies, such as intrusion detection and prevention systems (IDS/IPS), deep packet inspection (DPI), and application-level gateways (ALGs), to provide more granular control over network traffic.
+  	      			 ***HTTPS/SSL***
+HTTPS (Hypertext Transfer Protocol Secure) is a secure version of the HTTP protocol used for transmitting data over the internet. It is designed to provide confidentiality, integrity, and authenticity of data between a web server and a web client, such as a web browser. HTTPS is widely used for secure communication over the internet, particularly for online transactions, sensitive data transfer, and secure logins.
+
+SSL (Secure Sockets Layer) is the predecessor to the newer TLS (Transport Layer Security) protocol, and is used to establish a secure communication channel between a web server and a web client. SSL/TLS uses a combination of public key cryptography and symmetric key cryptography to encrypt and decrypt data, ensuring that sensitive information is protected from unauthorized access or interception.
+
+When a user connects to a website over HTTPS, the web server presents a digital certificate to the client, which contains the server's public key and other identifying information. The client uses this certificate to authenticate the server, establish a secure connection, and encrypt the data transmitted between the server and the client.
+
+HTTPS provides several key security benefits over HTTP, including protection against eavesdropping, data tampering, and impersonation attacks. It also enables web browsers to display a padlock icon or green address bar, indicating that the website is using a trusted SSL/TLS certificate and providing a visual cue to users that their connection is secure.
+
+In summary, HTTPS and SSL/TLS are critical technologies used to secure data transmissions over the internet, providing confidentiality, integrity, and authenticity of data exchanged between web servers and clients.
+                                     ***Load-balancer***
+A load balancer is a network device or software application that distributes incoming network traffic across multiple servers or resources to optimize performance, increase reliability, and ensure high availability. The main function of a load balancer is to evenly distribute network traffic among a group of servers or resources, preventing any single server from becoming overloaded and causing network congestion or downtime.
+
+Load balancers can be hardware-based or software-based, and can be located in different places in a network topology, such as between a private network and the internet, or between different segments of a private network. Load balancers use various algorithms to distribute network traffic among the available servers, such as round-robin, least connections, IP hash, and others.
+
+Load balancers are an essential component of high-traffic websites and applications, allowing them to handle large volumes of traffic and provide fast, reliable, and highly available services to users.
+                               ***Web server***
+
+A web server is a software application or program that responds to requests from web browsers or other client devices over the internet or a private network. The main function of a web server is to serve web pages and other content, such as images, videos, and documents, to clients that request them.
+
+When a user types a URL (Uniform Resource Locator) into a web browser, the browser sends a request to the web server for the corresponding web page or resource. The web server then retrieves the requested content from a file system or a database, generates an HTTP (Hypertext Transfer Protocol) response, and sends it back to the client.Web servers are an essential component of the internet and the World Wide Web, allowing users to access and share information and services across different devices and locations.
+       	    	    		***Application server***
+An application server is a software platform that provides a runtime environment for deploying and running enterprise-level applications. It acts as an intermediary between the front-end user interface and the back-end data and services, handling the business logic, transaction management, security, and other application-level services.Some popular application servers include Apache Tomcat, IBM WebSphere, Oracle WebLogic, and Red Hat JBoss.
+
+In addition to providing a runtime environment for applications, application servers can also provide other advanced features such as load balancing, caching, and session management. They can also integrate with other enterprise-level systems such as databases, message brokers, and identity providers to provide a complete application platform.
+ 	  	   
+                                ***Database***
+A Database is a software system that stores and manages the data used by the application. A web application typically consists of two parts: a front-end interface that interacts with users, and a back-end system that stores and manages the data used by the application.
+
+The database is a critical component of the back-end system, as it stores and retrieves the data used by the application. It is responsible for organizing and storing data in a structured way, and for providing mechanisms for accessing and modifying the data. Some common types of databases used in web applications include relational databases such as MySQL, PostgreSQL, and Oracle, and non-relational databases such as MongoDB and Cassandra.database to store user data, such as login credentials, user profiles, and preferences, as well as application data such as orders, transactions, and inventory. 
+
+
+
+DNS request: Your computer sends a DNS request to your configured DNS server to resolve the domain name "www.google.com" into an IP address. The DNS server responds with the IP address of one of Google'
+
+s web servers.
+                                
+TCP/IP: Your computer initiates a TCP/IP connection with the web server using the IP address obtained from the DNS server. This involves a three-way handshake process to establish the connection.
+
+Firewall: Your computer's firewall may check the incoming and outgoing network traffic to ensure that it complies with the configured security policies. If the traffic is allowed, it is forwarded to the web server.
+
+HTTPS/SSL: Your computer and the web server perform a handshake process to establish an encrypted HTTPS connection using SSL/TLS. This involves a series of steps to authenticate the server, establish encryption keys, and negotiate a secure communication channel.
+
+Load-balancer: If Google uses a load balancer, the HTTPS request from your computer is routed to an available web server in the server pool based on configured load-balancing algorithms.
+
+Web server: The web server receives the HTTPS request from your computer and processes it. It may retrieve the requested web page from a cache or generate it dynamically using server-side scripting technologies such as PHP or ASP.NET.
+
+Application server: If the web page requires dynamic content, the web server may forward the request to an application server that runs the relevant business logic and generates the content.
+
+Database: If the application server needs to retrieve data from a database, it sends a query to a database server and waits for the response. The database server retrieves the requested data and sends it back to the application server, which formats it into HTML and sends it back to the web server.
+
+Web server: The web server sends the HTML content back to your computer over the encrypted HTTPS connection. Your browser then renders the web page and displays it to you.
+
+Overall, this process is transparent to the end user, who only needs to enter the URL in the browser's address bar and wait for the web page to load.
+
+
+
+
+
