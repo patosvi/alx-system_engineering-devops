@@ -1,0 +1,2 @@
+curl -sI 34.229.189.25
+#the above checks the status of nginx server
