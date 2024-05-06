@@ -1,2 +1,3 @@
 # alx-system_engineering-devops
-Rachet ball
+Rachet bal
+2nd Samuel 28,29
